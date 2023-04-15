@@ -7,7 +7,7 @@
 int main()
 {
     int task_number = 0;
-    std::cout << "Enter task number (1-4)" << std::endl;
+    std::cout << "Enter task number (1,2,4)" << std::endl;
     std::cin >> task_number;
 
     if (task_number == 1)
@@ -18,5 +18,10 @@ int main()
     if (task_number == 2)
     {
         execute_task2();
+    }
+
+    if (task_number == 4)
+    {
+        execute_task4();
     }
 }

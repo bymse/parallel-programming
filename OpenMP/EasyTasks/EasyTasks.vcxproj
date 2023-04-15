@@ -133,6 +133,7 @@
     <ClCompile Include="EasyTasks.cpp" />
     <ClCompile Include="task1.cpp" />
     <ClCompile Include="task2.cpp" />
+    <ClCompile Include="task4.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="tasks.hpp" />
