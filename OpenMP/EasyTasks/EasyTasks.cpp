@@ -2,7 +2,7 @@
 //
 
 #include <iostream>
-#include "task1.hpp"
+#include "tasks.hpp"
 
 int main()
 {
@@ -13,5 +13,10 @@ int main()
     if (task_number == 1)
     {
         execute_task1();
+    }
+
+    if (task_number == 2)
+    {
+        execute_task2();
     }
 }

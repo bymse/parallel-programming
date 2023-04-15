@@ -21,9 +21,12 @@
     <ClCompile Include="task1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="task2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="task1.hpp">
+    <ClInclude Include="tasks.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
