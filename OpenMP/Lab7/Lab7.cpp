@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include <omp.h>
 
 int main()
 {
@@ -16,7 +17,7 @@ int main()
             A[i][j] = (double)rand() / RAND_MAX;
         }
     }
-
+    double start_time = omp_get_wtime();
     double det = 1;
 #pragma omp parallel for shared(A,det)
     for (int i = 0; i < size - 1; i++)
@@ -54,8 +55,10 @@ int main()
         det_diag *= A[i][i];
     }
     det *= det_diag;
+    double end_time = omp_get_wtime();
 
-    std::cout << "Determinant of the matrix is " << det << std::endl;
+    std::cout << "Determinant of the matrix: " << det << std::endl;
+    std::cout << "Time: " << end_time - start_time << std::endl;
 
     for (int i = 0; i < size; i++) {
         delete[] A[i];
